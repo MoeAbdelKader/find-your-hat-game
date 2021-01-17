@@ -1,0 +1,1 @@
+Code for find-your-hat game created as part of Codecademy's Full Stack Engineer career path. Play the game in your terminal by entering up,down,left, and right to move around the field until you capture the hat. Avoid falling in the holes!
