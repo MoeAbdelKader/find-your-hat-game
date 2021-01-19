@@ -77,8 +77,8 @@ class Field{
         //Core game loop. Game runs in a wihle loop based on gameEndState that is adjusted at game output scenarios above.
         while (this._gameEndState===false){
             this.print()
-            //print current state. Adjust to only do this at game beginning.
-            let direction = prompt('In which direction would you like to move?');
+            //print current state. 
+            let direction = prompt('In which direction would you like to move? ');
             //prompt user for direction
             let nextPointArray = this.findNextPoint(direction);
             //call findNextPoint to identify next point array.
@@ -87,8 +87,6 @@ class Field{
             //extract next row and next column, assign as current point
             this._field[this._row][this._col] = pathCharacter;
             //mark current point with path character to simulate movement.
-            this.print()
-            //print updated state.
         }
     }
     static generateField(height,width){
